@@ -1,7 +1,7 @@
 # MF-DFA-in-Julia
-# This is an implementation of the multifractal detrended fluctuation analysis in Julia.
-# It is basically a translation from matlab to julia based in the code from  <Introduction to multifractal detrended fluctuation analysis in Matlab>
-# by Espen A. F. Ihlen*
+## This is an implementation of the multifractal detrended fluctuation analysis in Julia.
+## It is basically a translation from matlab to julia based in the code from  <Introduction to multifractal detrended fluctuation analysis in Matlab>
+## by Espen A. F. Ihlen*
 
 using Polynomials, LinearAlgebra
 
@@ -11,10 +11,10 @@ using Polynomials, LinearAlgebra
 
 function MFDFA(data::Array, scales::Array, q::Array)
 	
-    """
-    data ---------> signal or data array 
-    scales -------> array of scales 
-    q ------------> array of moments 
+    
+    #data ---------> signal or data array 
+    #scales -------> array of scales 
+    #q ------------> array of moments 
     """
     
     proFile = cumsum( data .- mean(data) ) ; 

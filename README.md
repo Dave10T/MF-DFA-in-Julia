@@ -3,11 +3,8 @@
 ## It is basically a translation from matlab to julia based in the code from  <Introduction to multifractal detrended fluctuation analysis in Matlab>
 ## by Espen A. F. Ihlen*
 
+
 using Polynomials, LinearAlgebra
-
-
-
-
 
 function MFDFA(data::Array, scales::Array, q::Array)
 	

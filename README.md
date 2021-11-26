@@ -10,7 +10,8 @@ using Polynomials, LinearAlgebra
 
 
 function MFDFA(data::Array, scales::Array, q::Array)
-	"""
+	
+    """
     data ---------> signal or data array 
     scales -------> array of scales 
     q ------------> array of moments 
